@@ -1,0 +1,377 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+body{
+	font-family: "Microsoft YaHei";
+}
+/*头部导航部分*/
+.header{
+	width:100%;
+	height: 60px;
+	background-color: rgba(255,255,255,0);
+}
+.header__logo{
+	height: 60px;
+	line-height: 60px;
+	background: url(../img/logo.png) no-repeat left center;
+    margin-left: 10px;
+    padding-left: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.header__nav{
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	padding-top: 10px;
+}
+.header__nav__item{
+	font-size: 16px;
+	color: #fff;
+	padding-right: 30px;
+}
+.header__nav__item_button{
+	background-color: #f00;
+	margin-right: 20px;
+	padding:0 18px;
+	border-radius: 6px;
+}
+.header__nav__item_button:hover{
+	background-color: #b71c0e;
+}
+.header__nav__tip{
+	width: 65px;
+	height: 2px;
+	background-color: #f00;
+	position: absolute;
+	transition: all .8s;
+	left: 0;
+}
+/*第一屏*/
+.screen-1{
+	height: 640px;
+	background:url(../img/sc1.jpg) no-repeat center;
+	/*图片填充整个背景*/ 
+	background-size: cover;
+	color: #fff;
+	position: relative;
+}
+.screen-1__heading{
+	font-size: 46px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 170px;
+}
+.screen-1__subheading{
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/*第二屏*/
+.screen-2{
+	height: 675px;
+	background:url(../img/sc2.png) no-repeat bottom center;
+	position: relative;
+	overflow: hidden;
+}
+.screen-2__heading{
+	/*给文本设置样式，先定位再大小*/
+	text-align: center;
+	padding-top: 50px;
+	font-size: 46px;
+	font-weight: bold;
+}
+/*小短线统一样式*/
+.line{
+	width: 50px;
+	height: 3px;
+	background-color: #f00;
+	position: absolute;
+	left: 50%;
+	margin-left: -25px;
+}
+.screen-2__line{
+	top: 140px;
+}
+.screen-2__subheading{
+	text-align: center;
+	padding-top: 55px;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 28px;
+}
+.screen-2__person{
+	width: 275px;
+	height: 380px;
+	background:url(../img/sc2-1.png) no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -137.5px;
+    bottom: 0;
+    z-index: 3;
+}
+.screen-2__rocket{
+	width: 266px;
+	height: 205px;
+	background:url(../img/sc2-2.png) no-repeat;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 100px;
+	z-index: 2;
+}
+
+/*第三屏*/
+.screen-3{
+	height: 640px;
+	background-color: #2b333b;
+}
+.screen-3__wrap{
+	width: 1200px;
+	height: 640px;
+	margin: 0 auto;
+	position: relative;
+}
+.screen-3__left{
+	width: 308px;
+	height: 340px;
+	background:url(../img/sc3.png);
+	position: absolute;
+	top: 50%;
+	margin-top: -154px;
+	left: 50px;
+}
+.screen-3__right{
+	padding-left: 600px;
+}
+.screen-3__heading{
+	padding-top: 230px;
+	font-size: 38px;
+	color: #fff;
+}
+.screen-3__subheading{
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+	padding-top: 40px;
+	line-height: 28px;
+}
+.screen-3__line{
+	margin: 20px 0;
+}
+.screen-3__type{
+	height: 60px;
+	margin-top: 100px;
+	transform: translate(0,300%);
+    transition: all 0s 2s;
+    opacity: 0;
+}
+.screen-3__type__item{
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border:5px solid;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 40px;
+	background-color: rgba(255,255,255,0);
+}
+.screen-3__type__item_1{
+	color: #2294ff;
+	border-color: rgba(34,148,255,.4);
+}
+.screen-3__type__item_2{
+	color: #7888fd;
+	border-color: rgba(120,136,253,.4);
+}
+.screen-3__type__item_3{
+	color: #ff584c;
+	border-color: rgba(255,88,76,.4);
+}
+.screen-3__type__item_4{
+	color: #27bde5;
+	border-color: rgba(39,189,229,.4);
+}
+.screen-3__type__item_5{
+	color: #90bd56;
+	border-color: rgba(144,189,86,.4);
+}
+
+/*第四屏*/
+.screen-4{
+	height: 640px;
+	background-color: #f3f5f7;
+	position: relative;
+}
+.screen-4__heading{
+	text-align: center;
+	padding-top: 130px;
+	font-size: 46px;
+}
+.screen-4__subheading{
+	text-align: center;
+	padding-top: 55px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.screen-4__line{
+	top: 220px;
+}
+.screen-4__features{
+	width: 960px;
+	height: 120px;
+	margin: 100px auto;	
+}
+.screen-4__features__item{
+	width: 160px;
+	height: 120px;
+	float: left;
+	font-size: 14px;
+	text-align: center;
+	padding: 95px 40px 0;
+	/*背景颜色用于测试*/
+	/*background-color: grey;*/
+}
+.screen-4__features__item_1{
+	background:url(../img/sc4-1.png) no-repeat center top;
+}
+.screen-4__features__item_2{
+	background:url(../img/sc4-2.png) no-repeat center top;
+}
+.screen-4__features__item_3{
+	background:url(../img/sc4-3.png) no-repeat center top;
+}
+.screen-4__features__item_4{
+	background:url(../img/sc4-4.png) no-repeat center top;
+}
+
+/*第五屏*/
+.screen-5{
+	height: 640px;
+	background-color: #ac151a;
+	background:url(../img/sc5.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.screen-5__img{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	background:url(../img/sc5-1.png);
+	left: 50%;
+	margin-left: -100px;
+	top: 80px;
+}
+.screen-5__heading{
+	text-align: center;
+	padding-top: 330px;
+	font-size: 46px;
+	color: #fff;
+}
+.screen-5__line{
+	top:420px;
+}
+.screen-5__subheading{
+	text-align: center;
+	margin-top: 60px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+}
+
+/*第六屏按钮*/
+.screen-6{
+	height: 180px;
+	text-align: center;
+}
+.screen-6__button{
+	/*设置内联块可应用上面的水平居中*/
+	display: inline-block;
+	width: 220px;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #666;
+	text-align: center;
+	color: #333;
+	margin: 64px 0;
+	border-radius: 6px;
+	font-size: 18px;
+	font-weight: bold;
+	transition: all .6s;
+}
+.screen-6__button:hover{
+	color:#fff;
+	background-color: #2b333b;
+	transform: scale(1.1);
+}
+
+/*脚部*/
+.footer{
+	height: 80px;
+	background-color:#000;
+	text-align: center;
+}
+.footer__nav{
+	padding-top: 18px;
+}
+.footer__nav__item{
+	font-size: 14px;
+	color: #fff;
+	padding: 0 8px;
+}
+.footer__nav__item:hover{
+	color: #f00;
+}
+.footer p{
+	color: #999;
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+/*右侧导航栏*/
+.outline{
+	position: fixed;
+	right: 0;
+	bottom: 120px;
+	background-color:#fff;
+	box-shadow: 0 0 6px rgba(0,0,0,.2);
+	border-radius: 5px;
+	transition: all 1s;
+	opacity: 0;
+	transform: translate(100%,0);
+	padding: 5px 5px;
+}
+.outline__item{
+	/*将a标签变为块级元素*/
+	display: block;
+	margin: 5px;
+	padding: 6px 0;
+	color: #333;
+	text-align: center;
+	border-top: 1px solid #ddd;
+}
+.outline__item:first-child{
+	border:none;
+}
+.outline__item:hover{
+	color: #f00;
+}
+/*激活的项目字体颜色为红色*/
+.outline_status_back_active {
+    color: red;
+}
+/*从隐藏到显现*/
+.outline_status_back{
+	opacity: 1;
+	transform: translate(0,0);
+}
